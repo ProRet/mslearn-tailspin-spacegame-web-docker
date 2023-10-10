@@ -13,6 +13,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
+      vmImage: "windows-latest"
       name: Default
     steps:
     - task: Docker@2
@@ -33,6 +34,7 @@ stages:
   - job: 'Deploy'
     displayName: 'Deploy job'
     pool:
+      vmImage: "windows-latest"
       name: Default
     variables:
     - group: Release

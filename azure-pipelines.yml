@@ -15,8 +15,6 @@ stages:
     pool:
       name: Default
     steps:
-    - script: docker build -f $(Build.SourcesDirectory)/Korolenko/Dockerfile -t myimage:$(Build.BuildId) .
-      displayName: 'Build Docker image'
     - task: Docker@2
       displayName: 'Build and push the image to container registry'
       inputs:

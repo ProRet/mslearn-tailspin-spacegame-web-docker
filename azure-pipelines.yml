@@ -21,7 +21,7 @@ stages:
           command: buildAndPush
           buildContext: $(Build.Repository.LocalPath)
           repository: $(webRepository)
-          #dockerfile: 'C:\agent\_work\1\s\Korolenko\Dockerfile'
+          dockerfile: 'C:\agent\_work\1\s\Korolenko\Dockerfile'
           containerRegistry: 'Container Korolenko'
           tags: |
             $(tag)

@@ -22,7 +22,7 @@ stages:
           buildContext: $(Build.Repository.LocalPath)
           repository: $(webRepository)
           dockerfile: 'C:\agent\_work\1\s\Korolenko\Dockerfile'
-          containerRegistry: 'Azure Container Registry Korolenko'
+          containerRegistry: 'Container Korolenko'
           tags: |
             $(tag)
 

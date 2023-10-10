@@ -15,9 +15,6 @@ stages:
     pool:
       name: Default
     steps:
-    - script: dockerize -o $(Build.SourcesDirectory)/Korolenko -t $(Build.SourcesDirectory)/Korolenko/Dockerfile
-      displayName: 'Generate Dockerfile'
-      continueOnError: true # Можно добавить параметр для игнорирования ошибок, если dockerize не установлен
     - task: Docker@2
       displayName: 'Build and push the image to container registry'
       inputs:

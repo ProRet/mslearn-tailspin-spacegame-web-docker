@@ -20,9 +20,9 @@ stages:
       inputs:
           command: buildAndPush
           buildContext: $(Build.Repository.LocalPath)
+          containerRegistry: 'Container Korolenko'
           repository: $(webRepository)
           dockerfile: '$(Build.SourcesDirectory)/Korolenko/Dockerfile'
-          containerRegistry: 'Container Korolenko'
           tags: |
             $(tag)
 

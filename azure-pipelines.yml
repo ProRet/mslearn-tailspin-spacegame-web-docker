@@ -22,7 +22,7 @@ stages:
           buildContext: $(Build.Repository.LocalPath)
           containerRegistry: 'Container Korolenko'
           repository: $(webRepository)
-          dockerfile: '$(Build.SourcesDirectory)/Korolenko/Dockerfile'
+          dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile'
           tags: |
             $(tag)
 
